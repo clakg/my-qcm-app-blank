@@ -1,23 +1,20 @@
 import React from 'react';
 import { StyleSheet, KeyboardAvoidingView } from 'react-native';
 import Constants from 'expo-constants';
-import Home from "./screens/Home";
+import AppNavigator from "./navigation/AppNavigator";
 
 export default function App() {
-  return (
-      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
-        <Home/>
-      </KeyboardAvoidingView>
-  );
+    return (
+        <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
+            <AppNavigator/>
+        </KeyboardAvoidingView>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'lightblue',
-    alignItems: 'center',
-    //justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight
-  },
+    container: {
+        flex: 1,
+        backgroundColor: 'pink',
+        paddingTop: Constants.statusBarHeight
+    },
 });
-

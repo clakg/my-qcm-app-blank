@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { View, Text, FlatList, Button } from 'react-native';
-import SubjectItem from "../components/SubjectItem";
+import SubjectItem from "./../../components/SubjectItem";
 
 class Home extends Component {
 
@@ -10,25 +10,25 @@ class Home extends Component {
 
     constructor(props){
         super(props);
-            this.state = {
-                subjects: [],
-                title: '',
-                /*
-                questions: [
-                    {
-                        title: '',
-                        answers: [
-                            {
-                                answer: '',
-                                isValidAnswer: true
-                            }
-                        ]
+        this.state = {
+            subjects: [],
+            title: '',
+            /*
+            questions: [
+                {
+                    title: '',
+                    answers: [
+                        {
+                            answer: '',
+                            isValidAnswer: true
+                        }
+                    ]
 
-        }
-                ]
-                */
-                page:1
-            };
+    }
+            ]
+            */
+            page:1
+        };
     }
 
     componentDidMount() {
