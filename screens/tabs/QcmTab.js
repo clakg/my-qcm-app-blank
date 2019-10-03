@@ -5,8 +5,16 @@ import SubjectItem from "./../../components/SubjectItem";
 class Home extends Component {
 
     static navigationOptions = {
-        drawerLabel: 'Accueil'
+        title: 'QCM',
+        headerStyle: {
+            backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
     };
+
 
     constructor(props){
         super(props);
@@ -46,7 +54,7 @@ class Home extends Component {
     render(){
         return (
             <View style={{ flex: 1, justifyContent: '', alignItems: 'center' }}>
-                <Text>Home</Text>
+                <Text>QCM</Text>
 
                 <FlatList data={this.state.subjects}
                           renderItem={({item}) => <SubjectItem subject={item}/>}

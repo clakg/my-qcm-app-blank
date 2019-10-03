@@ -5,8 +5,16 @@ import SubjectItem from "../components/SubjectItem";
 class Home extends Component {
 
     static navigationOptions = {
-        drawerLabel: 'Accueil'
+        title: 'Home',
+        headerStyle: {
+            backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
     };
+
 
     constructor(props){
         super(props);
@@ -47,13 +55,13 @@ class Home extends Component {
         return (
             <View style={{ flex: 1, justifyContent: '', alignItems: 'center' }}>
                 <Text>Home</Text>
-
+                <View style={{ height: 250 }}>
                 <FlatList data={this.state.subjects}
                           renderItem={({item}) => <SubjectItem subject={item}/>}
                           keyExtractor={(item, index) => index.toString()}
                 />
                 <Button onPress={() => this.setState({ page: this.state.page + 1 }, () => this.fetchSubjects())} title='Charger plus'/>
-
+                </View>
             </View>
         );
     }

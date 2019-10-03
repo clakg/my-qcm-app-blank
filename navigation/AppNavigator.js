@@ -3,18 +3,19 @@ import { createAppContainer } from "react-navigation";
 import { createDrawerNavigator } from "react-navigation-drawer";
 import Home from "../screens/Home";
 import NewSubject from "../screens/NewSubject";
-import SensorNavigator from "./SensorNavigator";
+import MyTabNavigator from "./MyTabNavigator";
 
 
 const AppNavigator = createDrawerNavigator(
     {
         Home: Home,
+        Tabs: MyTabNavigator,
         NewSubject: NewSubject,
-        Sensors: SensorNavigator
+
 
     },
     {
-        initialRouteName: 'Home'
+        initialRouteName: 'Tabs'
     }
 );
 

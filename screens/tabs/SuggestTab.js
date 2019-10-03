@@ -3,6 +3,8 @@ import {Button, TextInput, View} from "react-native";
 
 class FormSubject extends Component {
 
+
+
     constructor(props) {
         super(props);
         this.state = {

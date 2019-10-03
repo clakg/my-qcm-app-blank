@@ -2,10 +2,10 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 import QcmTab from "../screens/tabs/QcmTab";
 import SuggestTab from "../screens/tabs/SuggestTab";
 
-const SensorNavigator = {
+const MyTabNavigator = {
 
     QcmTab: QcmTab,
     SuggestTab: SuggestTab
 };
 
-export default createBottomTabNavigator(SensorNavigator);
+export default createBottomTabNavigator(MyTabNavigator);
