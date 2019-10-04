@@ -45,7 +45,9 @@ class QcmTab extends Component {
         console.log(process.env.API_URL + '/subjects?page=')
         fetch(process.env.API_URL + '/subjects?page=' + this.state.page) // charge la liste des sujets dans le state
             .then(response => response.json())
-            .then(data => this.setState({ subjects: [...this.state.subjects, ...data.subjects] }))
+            .then(data => this.setState({
+                subjects: [...this.state.subjects, ...data.subjects]
+            }))
     }
 
     render(){

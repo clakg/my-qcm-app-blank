@@ -1,32 +1,11 @@
 import React, {Component} from 'react';
-import { View, Text, TouchableOpacity } from "react-native";
-import styles from "../Stylesheet";
+import { View, Text } from "react-native";
 
 class Subject extends Component {
 
     static navigationOptions = ({ navigation }) => {
-        const subject = navigation.getParam('subject');
         return {
-            title: subject.title,
-            headerTitleStyle: {
-                textAlign: 'left'
-            },
-            headerRight: (
-                <View style={styles.btnHeaderContainer}>
-                    <TouchableOpacity style={[ styles.btn, styles.btnHeader, styles.btnDanger ]} onPress={() => {
-                        fetch(process.env.API_URL + '/subjects/' + subject._id, { method: 'delete' })
-                            .then(response => response.json())
-                            .then(data => navigation.navigate('Search'))
-                            .catch(err => console.log(err))
-                        ;
-                    }} >
-                        <Text style={styles.btnDangerText}>Supprimer</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[ styles.btn, styles.btnHeader, styles.btnWarning ]} onPress={() => navigation.navigate('EditSubject', { subject: subject })}>
-                        <Text style={styles.btnWarningText}>Modifier</Text>
-                    </TouchableOpacity>
-                </View>
-            )
+            title: navigation.getParam('subject').title
         }
     };
 
@@ -34,9 +13,10 @@ class Subject extends Component {
 
         const subject = this.props.navigation.getParam('subject');
 
+
         return (
             <View>
-                <Text>{subject.title}</Text>
+                <Text style={{ padding: 10 }}>{subject.title}</Text>
             </View>
         );
     }

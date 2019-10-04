@@ -9,14 +9,14 @@ import MyTabNavigator from "./MyTabNavigator";
 
 const AppNavigator = createDrawerNavigator(
     {
-        Home: Home,
-        Tabs: MyTabNavigator,
+
+        QCM: MyTabNavigator,
         NewSubject: NewSubject,
 
 
     },
     {
-        initialRouteName: 'Tabs'
+        initialRouteName: 'QCM'
     }
 );
 
