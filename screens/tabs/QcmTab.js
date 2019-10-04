@@ -48,16 +48,16 @@ class QcmTab extends Component {
             .then(data => this.setState({ subjects: [...this.state.subjects, ...data.subjects] }))
     }
 
-
     render(){
         return (
-            <View style={{ flex: 3, padding: 20, backgroundColor: 'lightgrey' }}>
-                <Text style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>QCM</Text>
+            <View style={{ flex: 3, padding: 20, backgroundColor: '#BBD2E1' }}>
+                <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>QCM</Text>
                 <FlatList data={this.state.subjects}
                           renderItem={ ({item}) => <SubjectItem subject={item}
                           onClick={ () => this.props.navigation.navigate('Subject', { subject: item })}/> }
                           keyExtractor={(item, index) => index.toString()}
                 />
+                <Button onPress={() => this.setState({page: this.state.page + 1}, () => this.fetchSubjects())} title='▽'/>
             </View>
         );
     }

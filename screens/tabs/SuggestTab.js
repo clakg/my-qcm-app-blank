@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, TextInput, View} from "react-native";
+import {Button, Text, TextInput, View} from "react-native";
 
 class FormSubject extends Component {
 
@@ -37,8 +37,9 @@ class FormSubject extends Component {
 
     render() {
         return (
-            <View>
-                <TextInput value={this.state.title} onChangeText={text => this.setState({ title: text })} placeholder={'Nom du sujet'}/>
+            <View style={{ flex: 1, padding: 20, backgroundColor: '#BBD2E1' }}>
+                <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>SUGGESTIONS</Text>
+                <TextInput style={{backgroundColor:'white', padding:20, marginTop: 20, textAlign:'center'}} value={this.state.title} onChangeText={text => this.setState({ title: text })} placeholder={'Nom du sujet'}/>
                 <Button onPress={() => this.saveSubject()} title='Enregistrer'/>
             </View>
         );

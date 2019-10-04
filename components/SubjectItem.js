@@ -9,12 +9,14 @@ class SubjectItem extends Component {
         let button = null;
 
         if (typeof this.props.onClick === 'function') {
-            button = <Button onPress={() => this.props.onClick()} title='Afficher'/>;
+            button = <Button onPress={() => this.props.onClick()}
+                             title='Afficher'
+            />;
         }
 
         return (
             <View>
-                <Text style={{borderWidth : 1 ,backgroundColor: 'white', paddingVertical: 10, textAlign: 'center'}}>{title}</Text>
+                <Text style={{fontWeight: 'bold', color: '#808080' ,borderWidth : 0.1 ,backgroundColor: 'white', paddingVertical: 10, textAlign: 'center'}}>{title}</Text>
                 {button}
             </View>
         );
