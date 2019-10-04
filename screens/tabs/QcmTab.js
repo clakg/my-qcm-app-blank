@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { View, Text, FlatList, Button } from 'react-native';
 import SubjectItem from "./../../components/SubjectItem";
 
-class Home extends Component {
+class QcmTab extends Component {
 
     static navigationOptions = {
         title: 'QCM',
@@ -21,7 +21,6 @@ class Home extends Component {
         this.state = {
             subjects: [],
             title: '',
-            /*
             questions: [
                 {
                     title: '',
@@ -33,8 +32,7 @@ class Home extends Component {
                     ]
 
     }
-            ]
-            */
+            ],
             page:1
         };
     }
@@ -53,18 +51,16 @@ class Home extends Component {
 
     render(){
         return (
-            <View style={{ flex: 1, justifyContent: '', alignItems: 'center' }}>
-                <Text>QCM</Text>
-
+            <View style={{ flex: 3, padding: 20, backgroundColor: 'lightgrey' }}>
+                <Text style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>QCM</Text>
                 <FlatList data={this.state.subjects}
-                          renderItem={({item}) => <SubjectItem subject={item}/>}
+                          renderItem={ ({item}) => <SubjectItem subject={item}
+                          onClick={ () => this.props.navigation.navigate('Subject', { subject: item })}/> }
                           keyExtractor={(item, index) => index.toString()}
                 />
-                <Button onPress={() => this.setState({ page: this.state.page + 1 }, () => this.fetchSubjects())} title='Charger plus'/>
-
             </View>
         );
     }
 }
 
-export default Home;
+export default QcmTab;
