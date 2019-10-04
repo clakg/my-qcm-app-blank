@@ -3,7 +3,16 @@ import {Button, Text, TextInput, View} from "react-native";
 
 class FormSubject extends Component {
 
-
+    static navigationOptions = {
+        title: 'SUGGESTION D\'UN SUJET',
+        headerStyle: {
+            backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
+    };
 
     constructor(props) {
         super(props);
