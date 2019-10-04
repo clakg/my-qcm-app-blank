@@ -1,10 +1,11 @@
-import { createStackNavigator } from "react-navigation-stack";
-import SubjectScreen from "../screens/Subject";
+import Subject from "../screens/Subject";
 import QcmTab from "../screens/tabs/QcmTab";
+import {createBottomTabNavigator} from "react-navigation-tabs";
+
 
 const SubjectNavigator = {
     QcmTab: QcmTab,
-    Subject: SubjectScreen
+    Subject: Subject,
 };
 
-export default createStackNavigator(SubjectNavigator);
+export default createBottomTabNavigator(SubjectNavigator);

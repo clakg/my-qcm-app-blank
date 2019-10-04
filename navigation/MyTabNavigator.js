@@ -5,7 +5,7 @@ import SuggestTab from "../screens/tabs/SuggestTab";
 const MyTabNavigator = {
 
     QcmTab: QcmTab,
-    SuggestTab: SuggestTab
+    SuggestTab: SuggestTab,
 };
 
 export default createBottomTabNavigator(MyTabNavigator);

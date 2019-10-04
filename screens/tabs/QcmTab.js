@@ -4,16 +4,6 @@ import SubjectItem from "./../../components/SubjectItem";
 
 class QcmTab extends Component {
 
-    static navigationOptions = {
-        title: 'QCM',
-        headerStyle: {
-            backgroundColor: '#f4511e',
-        },
-        headerTintColor: '#fff',
-        headerTitleStyle: {
-            fontWeight: 'bold',
-        },
-    };
 
 
     constructor(props){

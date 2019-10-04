@@ -1,20 +1,16 @@
 import React from 'react';
 import { createAppContainer } from "react-navigation";
-import { createDrawerNavigator } from "react-navigation-drawer";
+import { createStackNavigator } from "react-navigation-stack";
 import SubjectNavigator from "./SubjectNavigator";
-import NewSubject from "../screens/NewSubject";
 import MyTabNavigator from "./MyTabNavigator";
 
 
 
-const AppNavigator = createDrawerNavigator(
+const AppNavigator = createStackNavigator(
     {
 
         QCM: MyTabNavigator,
-        NewSubject: NewSubject,
         SubjectNavigator: SubjectNavigator
-
-
     },
     {
         initialRouteName: 'QCM'
