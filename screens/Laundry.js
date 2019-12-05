@@ -9,6 +9,10 @@ class Subject extends Component {
         }
     };
 
+    componentDidMount() {
+
+    }
+
     render() {
 
         const subject = this.props.navigation.getParam('subject');
