@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
 import { View } from "react-native";
 import {StackActions, NavigationActions} from 'react-navigation';
-import FormSubject from "./FormSubject";
+import FormLaundry from "./FormLaundry";
 
-class EditSubject extends Component {
+class EditLaundry extends Component {
 
     static navigationOptions = ({ navigation }) => {
-        const subject = navigation.getParam('subject');
+        const laundry = navigation.getParam('laundry');
         return {
-            title: subject.title
+            title: laundry.title
         }
     };
 
     render() {
 
-        const subject = this.props.navigation.getParam('subject');
+        const laundry = this.props.navigation.getParam('laundry');
 
         return (
             <View>
-                <FormSubject subject={subject} onSave={() => {
+                <FormLaundry laundry={laundry} onSave={() => {
                     const resetAction = StackActions.reset({
                         index: 0,
                         actions: [NavigationActions.navigate({ routeName: 'Search' })]
@@ -30,4 +30,4 @@ class EditSubject extends Component {
     }
 }
 
-export default EditSubject;
+export default EditLaundry;

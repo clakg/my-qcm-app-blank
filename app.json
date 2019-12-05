@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "My-qcm-app",
-    "slug": "my-qcm-app",
+    "name": "My-laundry-app",
+    "slug": "my-laundry-app",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [

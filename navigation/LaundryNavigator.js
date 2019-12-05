@@ -1,11 +1,11 @@
-import Subject from "../screens/Subject";
-import QcmTab from "../screens/tabs/QcmTab";
+import Laundry from "../screens/Laundry";
+import LaundryTab from "../screens/tabs/LaundryTab";
 import {createBottomTabNavigator} from "react-navigation-tabs";
 
 
-const SubjectNavigator = {
-    QcmTab: QcmTab,
-    Subject: Subject,
+const LaundryNavigator = {
+    LaundryTab: LaundryTab,
+    Laundry: Laundry,
 };
 
-export default createBottomTabNavigator(SubjectNavigator);
+export default createBottomTabNavigator(LaundryNavigator);

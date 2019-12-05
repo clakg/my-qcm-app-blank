@@ -1,21 +1,22 @@
 import React, {Component} from 'react';
 import {Button, Text, TextInput, View} from "react-native";
 
-class FormSubject extends Component {
+class FormLaundry extends Component {
+
 
 
     constructor(props) {
         super(props);
         this.state = {
-            title: this.props.subject ? this.props.subject.title : ''
+            title: this.props.laundry ? this.props.laundry.title : ''
         };
     }
 
-    saveSubject() {
-        const method = this.props.subject ? 'PUT' : 'POST';
-        let url = process.env.API_URL + '/subjects';
-        if (this.props.subject) {
-            url += '/' + this.props.subject._id;
+    saveLaundry() {
+        const method = this.props.laundry ? 'PUT' : 'POST';
+        let url = process.env.API_URL + '/laundries';
+        if (this.props.laundry) {
+            url += '/' + this.props.laundry._id;
         }
         fetch(url, {
             method: method,
@@ -38,11 +39,11 @@ class FormSubject extends Component {
         return (
             <View style={{ flex: 1, padding: 20, backgroundColor: '#BBD2E1' }}>
                 <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>SUGGESTIONS</Text>
-                <TextInput style={{backgroundColor:'white', padding:20, marginTop: 20, textAlign:'center'}} value={this.state.title} onChangeText={text => this.setState({ title: text })} placeholder={'Nom du sujet'}/>
-                <Button onPress={() => this.saveSubject()} title='Enregistrer'/>
+                <TextInput style={{backgroundColor:'white', padding:20, marginTop: 20, textAlign:'center'}} value={this.state.title} onChangeText={text => this.setState({ title: text })} placeholder={'Nom de la laverie'}/>
+                <Button onPress={() => this.saveLaundry()} title='Enregistrer'/>
             </View>
         );
     }
 }
 
-export default FormSubject;
+export default FormLaundry;

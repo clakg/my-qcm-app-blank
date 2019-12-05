@@ -1,29 +1,24 @@
 import React, {Component} from 'react';
 import { View, Text } from "react-native";
 
-class Subject extends Component {
+class Laundry extends Component {
 
     static navigationOptions = ({ navigation }) => {
         return {
-            title: navigation.getParam('subject').title
+            title: navigation.getParam('laundry').title
         }
     };
 
-    componentDidMount() {
-
-    }
-
     render() {
 
-        const subject = this.props.navigation.getParam('subject');
-
+        const laundry = this.props.navigation.getParam('laundry');
 
         return (
             <View>
-                <Text style={{ padding: 10 }}>{subject.title}</Text>
+                <Text style={{ padding: 10 }}>{laundry.title}</Text>
             </View>
         );
     }
 }
 
-export default Subject;
+export default Laundry;

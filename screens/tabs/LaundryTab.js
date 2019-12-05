@@ -1,58 +1,41 @@
 import React, {Component} from 'react';
 import { View, Text, FlatList, Button } from 'react-native';
-import SubjectItem from "./../../components/SubjectItem";
+import LaundryItem from "./../../components/LaundryItem";
 
-class QcmTab extends Component {
-
-
+class LaundryTab extends Component {
 
     constructor(props){
         super(props);
         this.state = {
-            subjects: [],
+            laundries: [],
             title: '',
-            questions: [
-                {
-                    title: '',
-                    answers: [
-                        {
-                            answer: '',
-                            isValidAnswer: true
-                        }
-                    ]
-
-    }
-            ],
             page:1
         };
     }
 
     componentDidMount() {
-        this.fetchSubjects();
+        this.fetchLaundries();
     }
 
-    fetchSubjects() {
-        console.log(process.env.API_URL + '/subjects?page=')
-        fetch(process.env.API_URL + '/subjects?page=' + this.state.page) // charge la liste des sujets dans le state
+    fetchLaundries() {
+        console.log(process.env.API_URL + '/laundries?page=')
+        fetch(process.env.API_URL + '/laundries?page=' + this.state.page) // charge la liste des sujets dans le state
             .then(response => response.json())
             .then(data => this.setState({
-                subjects: [...this.state.subjects, ...data.subjects]
+                laundries: [...this.state.laundries, ...data.laundries]
             }))
     }
 
     render(){
         return (
             <View style={{ flex: 3, padding: 20, backgroundColor: '#BBD2E1' }}>
-                <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>QCM</Text>
-                <FlatList data={this.state.subjects}
-                          renderItem={ ({item}) => <SubjectItem subject={item}
-                          onClick={ () => this.props.navigation.navigate('Subject', { subject: item })}/> }
-                          keyExtractor={(item, index) => index.toString()}
+                <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>LAVERIE</Text>
+                <FlatList data={this.state.laundries} renderItem={ ({item}) => <LaundryItem laundry={item} onClick={ () => this.props.navigation.navigate('Laundry', { laundry: item })}/> } keyExtractor={(item, index) => index.toString()}
                 />
-                <Button onPress={() => this.setState({page: this.state.page + 1}, () => this.fetchSubjects())} title='▽'/>
+                <Button onPress={() => this.setState({page: this.state.page + 1}, () => this.fetchLaundries())} title='⏬'/>
             </View>
         );
     }
 }
 
-export default QcmTab;
+export default LaundryTab;

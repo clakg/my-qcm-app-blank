@@ -1,10 +1,10 @@
 import { createBottomTabNavigator } from "react-navigation-tabs";
-import QcmTab from "../screens/tabs/QcmTab";
+import LaundryTab from "../screens/tabs/LaundryTab";
 import SuggestTab from "../screens/tabs/SuggestTab";
 
 const MyTabNavigator = {
 
-    QcmTab: QcmTab,
+    LaundryTab: LaundryTab,
     SuggestTab: SuggestTab,
 };
 
