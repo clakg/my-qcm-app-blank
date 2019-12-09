@@ -36,7 +36,7 @@ class FormLaundry extends Component {
     render() {
         return (
             <View>
-                <TextInput value={this.state.title} onChangeText={text => this.setState({ title: text })} placeholder={'Nom du sujet'}/>
+                <TextInput value={this.state.title} onChangeText={text => this.setState({ title: text })} placeholder={'Nom de la laverie'}/>
                 <Button onPress={() => this.saveLaundry()} title='Enregistrer'/>
             </View>
         );

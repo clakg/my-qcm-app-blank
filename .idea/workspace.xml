@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e789edb8-619b-4dbf-bfa8-e09926a96ce5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Stylesheet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navigation/SearchNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navigation/SensorNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/sensors/ImageSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SubjectItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/LaundryItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LaundryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/LaundryItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/AppNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/MyTabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/MyTabNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/SubjectNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/LaundryNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock 2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/EditSubject.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/EditLaundry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/FormSubject.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FormLaundry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/FormLaundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FormLaundry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/NewSubject.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/NewLaundry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/SensorsNotValide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/Subject.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Laundry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/tabs/QcmTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/tabs/LaundryTab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/tabs/SuggestTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/tabs/SuggestTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Laundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Laundry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/NewLaundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/NewLaundry.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +50,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DotEnv" />
@@ -113,6 +111,14 @@
       <workItem from="1575547706819" duration="6737000" />
       <workItem from="1575559560307" duration="1976000" />
       <workItem from="1575576884656" duration="3297000" />
+      <workItem from="1575585113695" duration="11895000" />
+      <workItem from="1575637862823" duration="3934000" />
+      <workItem from="1575642134474" duration="4130000" />
+      <workItem from="1575653089585" duration="1150000" />
+      <workItem from="1575835676836" duration="941000" />
+      <workItem from="1575837037481" duration="68000" />
+      <workItem from="1575838115895" duration="33000" />
+      <workItem from="1575879400578" duration="741000" />
     </task>
     <servers />
   </component>
@@ -120,10 +126,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="531" y="178" width="782" height="541" key="find.popup" timestamp="1575553253894">
-      <screen x="0" y="23" width="1440" height="843" />
+    <state x="746" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575642260219">
+      <screen x="0" y="23" width="1440" height="842" />
     </state>
-    <state x="531" y="178" width="782" height="540" key="find.popup/0.23.1440.842@0.23.1440.842" timestamp="1575552579472" />
-    <state x="531" y="178" width="782" height="541" key="find.popup/0.23.1440.843@0.23.1440.843" timestamp="1575553253894" />
+    <state x="746" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.842@0.23.1440.842" timestamp="1575642260219" />
+    <state x="531" y="178" width="909" height="540" key="find.popup" timestamp="1575645711866">
+      <screen x="0" y="23" width="1440" height="841" />
+    </state>
+    <state x="531" y="178" width="909" height="540" key="find.popup/0.23.1440.841@0.23.1440.841" timestamp="1575645711866" />
+    <state x="531" y="178" width="909" height="540" key="find.popup/0.23.1440.842@0.23.1440.842" timestamp="1575627574514" />
+    <state x="531" y="178" width="782" height="541" key="find.popup/0.23.1440.843@0.23.1440.843" timestamp="1575623083298" />
   </component>
 </project>

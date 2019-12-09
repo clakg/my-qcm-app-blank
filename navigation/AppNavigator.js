@@ -1,19 +1,21 @@
 import React from 'react';
 import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
-import LaundryNavigator from "./LaundryNavigator";
-import MyTabNavigator from "./MyTabNavigator";
+import { createDrawerNavigator } from "react-navigation-drawer";
+import Home from "../screens/Home";
+import SearchNavigator from "./SearchNavigator";
+import NewLaundry from "../screens/NewLaundry";
+import SensorNavigator from "./SensorNavigator";
 
-
-
-const AppNavigator = createStackNavigator(
+const AppNavigator = createDrawerNavigator(
     {
 
-        Laundry: MyTabNavigator,
-        LaundryNavigator: LaundryNavigator
+        Home: Home,
+        Rechercher: SearchNavigator,
+        Ajouter: NewLaundry,
+        Image: SensorNavigator,
     },
     {
-        initialRouteName: 'Laundry'
+        initialRouteName: 'Home'
     }
 );
 

@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import { View, Text, FlatList, Button } from 'react-native';
-import LaundryItem from "./../components/LaundryItem";
+import { View, Text, FlatList, Button, Switch } from 'react-native';
+import TextInput from "../kitui/TextInput";
+import LaundryItem from "../components/LaundryItem";
 
-class LaundryTab extends Component {
+class Home extends Component {
 
     static navigationOptions = {
-        title: 'LAVERIE',
+
+        title: 'Accueil',
         headerStyle: {
             backgroundColor: '#f4511e',
         },
@@ -30,7 +32,7 @@ class LaundryTab extends Component {
     }
 
     fetchLaundries() {
-        console.log(process.env.API_URL + '/laundries?page=')
+        console.log(process.env.API_URL)
         fetch(process.env.API_URL + '/laundries?page=' + this.state.page) // charge la liste des sujets dans le state
             .then(response => response.json())
             .then(data => this.setState({ laundries: [...this.state.laundries, ...data.laundries] }))
@@ -39,7 +41,7 @@ class LaundryTab extends Component {
     render(){
         return (
             <View style={{ flex: 3, padding: 20, backgroundColor: '#BBD2E1' }}>
-                <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>QCM</Text>
+                <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>Liste des Laveries</Text>
                 <FlatList data={this.state.laundries}
                           renderItem={ ({item}) => <LaundryItem laundry={item}
                                                                 onClick={ () => this.props.navigation.navigate('Laundry', { laundry: item })}/> }
@@ -51,4 +53,4 @@ class LaundryTab extends Component {
     }
 }
 
-export default LaundryTab;
+export default Home;
