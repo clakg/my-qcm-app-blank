@@ -2,19 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e789edb8-619b-4dbf-bfa8-e09926a96ce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Stylesheet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navigation/SearchNavigator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navigation/SensorNavigator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/sensors/ImageSelector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Store/actions/actionLaundry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Store/actions/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Store/configureStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Store/reducers/laundryReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Store/reducers/userReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navigation/Navigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stylesheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/Stylesheet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/LaundryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/LaundryItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitui/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/kitui/TextInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/AppNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/EditLaundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/EditLaundry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/FormLaundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FormLaundry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Laundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Laundry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/NewLaundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/NewLaundry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/sensors/ImageSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/sensors/ImageSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/tabs/SuggestTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/tabs/SuggestTab.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +77,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Store/Reducers" />
       <recent name="$PROJECT_DIR$/screens" />
     </key>
   </component>
@@ -118,23 +127,38 @@
       <workItem from="1575835676836" duration="941000" />
       <workItem from="1575837037481" duration="68000" />
       <workItem from="1575838115895" duration="33000" />
-      <workItem from="1575879400578" duration="741000" />
+      <workItem from="1575879400578" duration="8486000" />
+      <workItem from="1575893872427" duration="71484000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="746" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575642260219">
       <screen x="0" y="23" width="1440" height="842" />
     </state>
     <state x="746" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.842@0.23.1440.842" timestamp="1575642260219" />
-    <state x="531" y="178" width="909" height="540" key="find.popup" timestamp="1575645711866">
-      <screen x="0" y="23" width="1440" height="841" />
+    <state x="526" y="221" width="909" height="544" key="find.popup" timestamp="1576192183710">
+      <screen x="0" y="23" width="1440" height="847" />
     </state>
     <state x="531" y="178" width="909" height="540" key="find.popup/0.23.1440.841@0.23.1440.841" timestamp="1575645711866" />
     <state x="531" y="178" width="909" height="540" key="find.popup/0.23.1440.842@0.23.1440.842" timestamp="1575627574514" />
     <state x="531" y="178" width="782" height="541" key="find.popup/0.23.1440.843@0.23.1440.843" timestamp="1575623083298" />
+    <state x="526" y="220" width="909" height="542" key="find.popup/0.23.1440.844@0.23.1440.844" timestamp="1575989953745" />
+    <state x="526" y="221" width="909" height="544" key="find.popup/0.23.1440.847@0.23.1440.847" timestamp="1576192183710" />
+    <state x="526" y="221" width="909" height="545" key="find.popup/0.23.1440.848@0.23.1440.848" timestamp="1576055606323" />
   </component>
 </project>

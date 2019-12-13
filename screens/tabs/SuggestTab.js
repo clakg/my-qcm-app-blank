@@ -37,7 +37,7 @@ class FormLaundry extends Component {
 
     render() {
         return (
-            <View style={{ flex: 1, padding: 20, backgroundColor: '#BBD2E1' }}>
+            <View>
                 <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>SUGGESTIONS</Text>
                 <TextInput style={{backgroundColor:'white', padding:20, marginTop: 20, textAlign:'center'}} value={this.state.title} onChangeText={text => this.setState({ title: text })} placeholder={'Nom de la laverie'}/>
                 <Button onPress={() => this.saveLaundry()} title='Enregistrer'/>

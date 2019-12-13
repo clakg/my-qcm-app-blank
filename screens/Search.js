@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { View, Text, FlatList, Button } from "react-native";
 import TextInput from "../kitui/TextInput";
 import LaundryItem from "../components/LaundryItem";
+import styles from "../Stylesheet";
 
 class Search extends Component {
 
@@ -36,18 +37,22 @@ class Search extends Component {
 
     render() {
         return (
-            <View>
-                <Text>Search Screen</Text>
-                <TextInput value={this.state.search} onChangeText={text => this.searchChangeText(text)} placeholder='Votre recherche'/>
-                <View style={{ height: 250 }}>
+            <View style={{ flex: 1, backgroundColor: 'lightpink' }}>
+                <TextInput value={this.state.search}
+                           onChangeText={text => this.searchChangeText(text)}
+                           placeholder='Entrez une Ville'
+                           style={styles.textInputArea}/>
+
+                <View style={{ flex: 8, backgroundColor: 'lightblue' }}>
                     <FlatList data={this.state.laundries}
-                              renderItem={({item}) => <LaundryItem laundry={item} onClick={() => this.props.navigation.navigate('Laundry', { laundry: item })}/>}
-                              keyExtractor={(item, index) => index.toString()}
-                    />
+                              renderItem={({item}) => <LaundryItem laundry={item}
+                                                                   onClick={() => this.props.navigation.navigate('Laundry', { laundry: item })}/>}
+                              keyExtractor={(item, index) => index.toString()}/>
                 </View>
-                <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
-                    <Button onPress={() => this.searchChangePage(-1)} title='<' disabled={this.state.page === 1}/>
-                    <Button onPress={() => this.searchChangePage(1)} title='>' disabled={(this.state.page * this.state.limit) >= this.state.count}/>
+
+                <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'lightgrey', justifyContent: 'space-around', alignItems: 'center' }}>
+                    <Button onPress={() => this.searchChangePage(-1)} title='<<' disabled={this.state.page === 1}/>
+                    <Button onPress={() => this.searchChangePage(1)} title='>>' disabled={(this.state.page * this.state.limit) >= this.state.count}/>
                 </View>
             </View>
         );

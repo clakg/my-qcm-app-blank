@@ -1,46 +1,39 @@
 import React, {Component} from 'react';
 import {Button, TextInput, View} from "react-native";
+import {saveLaundry} from "../Store/actions/actionLaundry";
+import {connect} from "react-redux";
 
 class FormLaundry extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            title: this.props.laundry ? this.props.laundry.title : ''
+            title: this.props.laundry ? this.props.laundry.title : '',
+            city: this.props.laundry ? this.props.laundry.city : '',
         };
-    }
-
-    saveLaundry() {
-        const method = this.props.laundry ? 'PUT' : 'POST';
-        let url = process.env.API_URL + '/laundries';
-        if (this.props.laundry) {
-            url += '/' + this.props.laundry._id;
-        }
-        fetch(url, {
-            method: method,
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ title: this.state.title })
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (typeof this.props.onSave === 'function') {
-                    this.props.onSave(data);
-                }
-            })
-            .catch(err => console.log(err))
     }
 
     render() {
         return (
             <View>
                 <TextInput value={this.state.title} onChangeText={text => this.setState({ title: text })} placeholder={'Nom de la laverie'}/>
-                <Button onPress={() => this.saveLaundry()} title='Enregistrer'/>
+                <TextInput value={this.state.city} onChangeText={text => this.setState({ city: text })} placeholder={'Ville'}/>
+                <Button onPress={() => this.props.saveLaundry({ title: this.state.title, city: this.state.city })} title='Enregistrer'/>
             </View>
         );
     }
 }
 
-export default FormLaundry;
+const mapStateToProps = (state) => {
+    return {
+
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        saveLaundry: (laundry) => dispatch(saveLaundry(laundry))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(FormLaundry);

@@ -2,20 +2,23 @@ import React, {Component} from 'react';
 import { View } from "react-native";
 import {StackActions, NavigationActions} from 'react-navigation';
 import FormLaundry from "./FormLaundry";
+import { connect } from 'react-redux'
+
 
 class EditLaundry extends Component {
 
     static navigationOptions = ({ navigation }) => {
         const laundry = navigation.getParam('laundry');
         return {
-            title: laundry.title
+            title: laundry.title,
+            city: laundry.city,
         }
     };
 
     render() {
 
         const laundry = this.props.navigation.getParam('laundry');
-
+        console.log(laundry)
         return (
             <View>
                 <FormLaundry laundry={laundry} onSave={() => {
@@ -30,4 +33,4 @@ class EditLaundry extends Component {
     }
 }
 
-export default EditLaundry;
+export default connect()(EditLaundry);

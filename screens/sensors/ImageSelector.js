@@ -14,7 +14,7 @@ class ImageSelector extends Component {
 
     componentDidMount() {
         Permissions.askAsync(Permissions.CAMERA_ROLL)
-            .then(({status}) => console.log(status))
+            .then(({status}) => (status))
         ;
     }
 
