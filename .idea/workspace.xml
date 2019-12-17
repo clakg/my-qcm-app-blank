@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e789edb8-619b-4dbf-bfa8-e09926a96ce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Store/actions/actionLaundry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Store/actions/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Store/configureStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Store/reducers/laundryReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Store/reducers/userReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navigation/Navigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Store/actions/actionLaundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/Store/actions/actionLaundry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Store/actions/actionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stylesheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/Stylesheet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/LaundryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/LaundryItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitui/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/kitui/TextInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/AppNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/EditLaundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/EditLaundry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/FormLaundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FormLaundry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Laundry.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Laundry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/sensors/ImageSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/sensors/ImageSelector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/tabs/SuggestTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/tabs/SuggestTab.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -128,7 +120,9 @@
       <workItem from="1575837037481" duration="68000" />
       <workItem from="1575838115895" duration="33000" />
       <workItem from="1575879400578" duration="8486000" />
-      <workItem from="1575893872427" duration="71484000" />
+      <workItem from="1575893872427" duration="75206000" />
+      <workItem from="1576486298440" duration="5570000" />
+      <workItem from="1576499819150" duration="22651000" />
     </task>
     <servers />
   </component>
@@ -140,7 +134,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

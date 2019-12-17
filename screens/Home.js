@@ -26,6 +26,7 @@ class Home extends Component {
     }
 
     render(){
+
         return (
             <View style={{ flex: 3, padding: 20, backgroundColor: '#BBD2E1' }}>
                 <Text style={{textAlign: 'center', fontSize: 20, fontWeight:'bold', margin:20 }}>Liste des Laveries</Text>

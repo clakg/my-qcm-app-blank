@@ -12,6 +12,7 @@ class EditLaundry extends Component {
         return {
             title: laundry.title,
             city: laundry.city,
+            address: laundry.address,
         }
     };
 

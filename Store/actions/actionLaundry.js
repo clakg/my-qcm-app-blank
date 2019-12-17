@@ -47,8 +47,6 @@ export function loadLaundry(page) {
 
 
 
-
-
 export function loadLaundryLoading(laundries) {
     return {
         type: LOAD_LAUNDRY_LOADING,
@@ -93,7 +91,6 @@ export function saveLaundryFailed(err) {
         loading: false
     };
 }
-
 
 
 

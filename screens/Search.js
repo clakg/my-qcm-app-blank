@@ -22,6 +22,7 @@ class Search extends Component {
     }
 
     searchChangeText(text) {
+
         this.setState({ search: text, page: 1 }, () => this.fetchLaundries());
     }
 
@@ -36,6 +37,7 @@ class Search extends Component {
     }
 
     render() {
+        console.log("RENDER")
         return (
             <View style={{ flex: 1, backgroundColor: 'lightpink' }}>
                 <TextInput value={this.state.search}

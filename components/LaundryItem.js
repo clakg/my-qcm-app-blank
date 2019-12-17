@@ -18,9 +18,10 @@ class LaundryItem extends Component {
         }
 
         return (
-            <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'orange', marginVertical: 4 }}>
+            <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'orange', marginVertical: 4,  }}>
                 <View style={{ flex: 5 }}>
-                    <Text style={styles.resultInputArea}>{this.props.laundry.title} </Text>
+                    <Text style={styles.resultInputArea}>{this.props.laundry.title}</Text>
+                    <Text style={styles.resultInputArea}>{this.props.laundry.city}</Text>
                 </View>
                 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                     {button}
